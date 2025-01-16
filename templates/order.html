@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='styles.css')}}">
+    <title>Document</title>
+</head>
+<body>
+    <div style="align-items: center;">
+        <h1 style="color: green;"><b>order placed succesfully</b></h1>
+        <h3 style="color: aliceblue;">your item will deliver at {{address}} with in 7 days. <br> we will call you on {{phone}}</h3>
+        <a href="{{ url_for('home') }}">Continue Shopping</a>
+        <form action="{{url_for('order')}}" method="post" id="gform" class="form-inline">
+            <input type="number" name="phone" id="phone" placeholder="Enter the ph number if its dosnt appear on top" class="text-white"><input type="submit" value="confirm" class="text-white">
+        </form>  
+
+    </div>
+</body>
+</html>

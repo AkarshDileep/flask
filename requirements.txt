@@ -1,0 +1,89 @@
+Flask==2.0.2
+Flask-SQLAlchemy==2.5.1
+Flask-WTF==1.0.0
+
+
+      <div class="">
+        <h3 class="roboticss1 p-3">High rated movies</h3>
+        <div class="row  swipe " data-aos="fade-left" data-aos-duration="1000">
+          <div class="lisst">
+          {% for movie in moviee %}
+            {% if movie.priority <= 3 %}
+              
+              <a href=""><div class="swiper" style="background-image: url(''); background-size: contain;"></div></a>
+              
+            {% endif %}
+          {% endfor %}
+            <div class="swiper" style="background-image: url('{% static 'images/wp8525542.jpg' %}'); background-size: contain;"></div>
+            <div class="swiper"style="background-image: url('{% static 'images/october.jpg' %}'); background-size: contain;"></div>
+            <div class="swiper"style="background-image: url('{% static 'images/kabaali.jpg' %}'); background-size: contain;"></div>
+            <div class="swiper"style="background-image: url('{% static 'images/wp8525542.jpg' %}'); background-size: contain;"></div>
+            <a href="{% url 'movielist'  %}"><div class="swiper"style=" background-size: contain;"></div></a>
+          
+          </div> 
+        </div>
+      </div>
+
+<div class="bg-image hover-overlay hover-zoom hover-shadow ripple">
+  <img src="https://mdbcdn.b-cdn.net/img/new/fluid/city/113.webp" class="w-100" />
+  <a href="">
+    <div class="mask" style="background-color: hsla(195, 83%, 58%, 0.2)"></div>
+  </a>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="col-12 p-5 text-light">
+                
+                <p class="roboticss1 h3" data-aos="fade" data-aos-duration="3000">Others Reviews</p>
+                <ul class="pt-5">
+                {% for review in reviewss %}
+                    
+                        {% if review.name == moviee.id %}
+                            <li>
+                                <div class="col-12 review p-3"data-aos="flip-left">
+                                    <p>{{ review.reviews }} </p>
+                                </div>
+                            </li>
+                        {% endif %}
+                    
+                {% endfor %}
+                   
+                </ul> 
+            </div>
+
+
+        </div>
+        <div class="col-md-12 text-cente">
+            <!--your review...............................................................................-->
+            <h3 class="roboticss1 p-5" data-aos="fade" data-aos-duration="3000">Add your Review</h3>
+        
+            <div class="col-10 row pt-5  mx-auto" >
+            <div class="col-md-6 text-center">
+              <img class="col-12 p-5 mx-auto"data-aos="slide-right" src="{% static 'images/' %}{{ moviee.image }}" alt="">
+            </div>
+            <div class="col-md-6">
+              <h2 class=" display-3 text-start"data-aos="flip-right" style="font-family: Opensaucesans, sans-serif; font-weight: 700;"> Add <br>Your Genuine <br> Review</h2>
+              <form action="" method="post" enctype="multipart/form-data"id="gform" class="form-inline">
+                {% csrf_token %}
+                <input data-aos="fade-left" type="email" placeholder="Email" name="email" class="col-12 bg-black text-light"><br>
+                <textarea data-aos="fade-left" placeholder="Review" name="reviews" id="" cols="20" rows="10" class="col-12 bg-black text-light"></textarea><br>
+                 <input  class="button form-submit-button col-md-6 float-end fontee my-auto" action="" type="submit" value="submit">
+                 
+                 
+              </form>
+            </div>
+          </div>
+    </div>

@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+   
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+     /* Full height */
+    
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+    background-color: black;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 100px#4FC8FC ;
+   
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.input-container {
+    margin-bottom: 15px;
+    background: black;
+ 
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="dat"],input[type="email"],input[type="text"],
+input[type="password"],input[type="number"],input[type="submit"] {
+    width: 100%;
+    background: black;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    color: #fff;
+}
+
+button {
+    background: linear-gradient(90deg, #4FC8FC 0.18%, #1D4DB1 80.65%);
+    color: #fff;
+    border-radius: 10px;
+    
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+hr {
+    margin: 20px 0;
+    border: none;
+    border-top: 1px solid #ddd;
+}
+
+p {
+    text-align: center;
+}
+link{
+    text-decoration: none;
+}
+.btnt{
+    background: linear-gradient(91.31deg, #4FC8FC 2.76%, #52FF8D 96.09%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    text-decoration: none;
+
+}

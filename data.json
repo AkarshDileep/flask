@@ -1,0 +1,58 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "username": "user1",
+            "password": "password1",
+            "address": "abc,kannur",
+            "phone": "1234567890"
+        },
+        {
+            "id": 2,
+            "username": "user2",
+            "password": "password2",
+            "address": "xyz,calicut",
+            "phone": "9876543210"
+        },
+        {
+            "username": "akarsh",
+            "password": "daba",
+            "address": "koodali,kannur",
+            "phone": 7510874140
+        }
+    ],
+    "products": [
+        {
+            "id": 1,
+            "name": "product1",
+            "price": 100,
+            "img": "https://burst.shopifycdn.com/photos/wireless-headphones.jpg?width=1000&format=pjpg&exif=0&iptc=0",
+            "description": "This is a product description",
+            "category": 1
+        },
+        {
+            "id": 2,
+            "name": "product2",
+            "price": 200,
+            "img": "https://i.pinimg.com/736x/ba/db/6a/badb6a17742e2093e0fb5397370ad8ec.jpg",
+            "description": "This is a product description",
+            "category": 2
+        },
+        {
+            "id": 3,
+            "name": "product3",
+            "price": 300,
+            "img": "https://i.pinimg.com/736x/ba/db/6a/badb6a17742e2093e0fb5397370ad8ec.jpg",
+            "description": "This is a product description",
+            "category": 1
+        },
+        {
+            "id": 4,
+            "name": "phone",
+            "price": 13000.0,
+            "img": "https://in.cmf.tech/cdn/shop/files/Engineering_aesthetics_750x.png?v=1720164742",
+            "description": "cmf by nothing phone 1",
+            "category": 1
+        }
+    ]
+}
